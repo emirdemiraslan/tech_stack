@@ -10,25 +10,16 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './src/reducers';
 import { Header, Card } from './src/components/common';
+import LibraryList from './src/components/LibraryList';
 
-const App = ({}) => (
+const App = () => (
   <Provider store={createStore(reducers)}>
-    <View style={styles.wrapper}>
+    <View style={{flex:1}}>
       <Header title='Tech Stack' />
-      <View style={styles.container}>
+      <LibraryList />
 
-      </View>
     </View>
   </Provider>
 );
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  wrapper: {
-
-  }
-});

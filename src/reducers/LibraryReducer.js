@@ -1,2 +1,2 @@
-import LibraryList from './LibraryList.json'
-export default () => LibraryList;
+import data from './LibraryList.json'
+export default () => data;
